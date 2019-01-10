@@ -1,0 +1,352 @@
+<?xml version = "1.0"?>
+<GameData>
+<!-- screenTitle is also used to identify you and your animation. 
+     So make sure to include your name as part of the screenTitle -->
+<title>Pirate Captain</title>
+<maxStringSize>50</maxStringSize>
+
+<frameCapOn>true</frameCapOn>
+<period>17</period>
+
+<numOfLife>3</numOfLife>
+<playerHp>3</playerHp>
+<healthPoint>20</healthPoint>
+<noOfDepth>4</noOfDepth>
+<bossHP>100</bossHP>
+<HP>100</HP>
+<slip>0.9</slip>
+
+<world>
+  <width>3000</width>
+  <height>600</height>
+  <limittop>350</limittop>
+  <limitbotton>595</limitbotton>
+</world>
+
+<view>
+  <width>1000</width>
+  <height>600</height>
+  <loc x="30" y="30"/>
+</view>
+
+<text>
+  <authorname x="30" y="550"/>
+  <fps x="30" y="570"/>
+  <godMode x="800" y="575"/>
+  <enemyRemaining x="795" y="555"/>
+</text>
+
+<!-- Setting for Hud -->
+<hudBulletPool>
+  <width>180</width>
+  <height>110</height>
+  <position x="815" y="15"/>
+  <backgroundColor r="255" g="255" b="255" a="120"/>
+  <outlineColor r="255" g="0" b="0" a="120"/>
+  <textColor r="255" g="255" b="255" a="0"/>
+</hudBulletPool>
+
+<hudTips>
+  <width>300</width>
+  <height>130</height>
+  <position x="510" y="15"/>
+  <backgroundColor r="255" g="255" b="255" a="120"/>
+  <outlineColor r="255" g="0" b="0" a="120"/>
+  <textColor r="255" g="255" b="255" a="0"/>
+</hudTips>
+
+<hudPlayerInfo>
+  <playerPhoto file="res/assets/viking_profile.png" transparency="true"/>
+  <healthFull file="res/assets/heart_full.png" transparency="true"/>
+  <healthEmpty file="res/assets/heart_full.png" transparency="true"/>
+  <width>64</width>
+  <height>64+3</height>
+  <position x="17" y="17"/>
+  <healthposition x="95" y="53" interval="8"/>
+  <backgroundColor r="146" g="254" b="242" a="255"/>
+  <outlineColor r="255" g="0" b="0" a="120"/>
+  <textColor r="255" g="255" b="255" a="0"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <transparency>true</transparency>
+</hudPlayerInfo>
+
+
+<gameOver>
+  <gamelose file="res/assets/gamelose.png" transparency="false"/>
+  <gamewin file="res/assets/gamewin.png" transparency="false"/>
+  <width>300</width>
+  <height>60</height>
+  <position x="380" y="200"/>
+  <win>
+    <backgroundColor r="255" g="255" b="255" a="122"/>
+    <outlineColor r="255" g="0" b="0" a="122"/>
+    <textColor r="0" g="0" b="255" a="255"/>
+  </win>
+  <lose>
+    <backgroundColor r="0" g="0" b="0" a="255"/>
+    <outlineColor r="255" g="50" b="50" a="255"/>
+    <textColor r="255" g="0" b="0" a="255"/>
+  </lose>
+  <transparency>false</transparency>
+</gameOver>
+
+
+<healthBar>
+  <width>180</width>
+  <height>20</height>
+  <position x="90" y="25"/>
+  <barColor r="0" g="255" b="0" a="255"/>
+  <backColor r="0" g="0" b="2" a="255"/>
+</healthBar>
+
+<!-- Setting for Sprites -->
+<playerPhoto>
+  <file>
+    <playerPhoto file="res/assets/viking_profile.png"/>
+    <liftfunll file="res/assets/heart_full.png" />
+    <walk file="res/assets/heart_empty.png" />
+  </file>
+  <startLoc x="20" y="20"/>
+  <number>1</number>
+  <speedX>100</speedX>
+  <speedY>100</speedY>
+  <transparency>false</transparency>
+  <interval>300</interval>
+  <distance>500</distance>
+  <strategy>rectangular</strategy>
+  <frames>1</frames>
+  <imageWidth>18</imageWidth>
+  <imageHeight>18</imageHeight>
+  <frameInterval>100</frameInterval>
+
+</playerPhoto>
+
+<maxFrames>1000</maxFrames>
+<username>Guoze</username>
+<authorname>Guoze Tang</authorname>
+
+<menu>
+  <width>1000</width>
+  <height>600</height>
+  <noOfOptions>3</noOfOptions>
+  <loc x="0" y="0"/>
+  <optionLoc x="450" y="100" />
+  <color r="193" g="205" b="205" a="255"/>
+  <backColor r="72" g="95" b="119" a="255"/>
+  <option0>Go to Game</option0>
+  <option1>Help</option1>
+  <option2>Exit</option2>
+  <spaces>60</spaces>
+</menu>
+
+<HealthBar>
+  <startLoc x="695" y="90"/>
+  <increment>10</increment>
+  <interval>1000</interval>
+  <width>200</width>
+  <height>15</height>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <backColor r="255" g="255" b="255" a="127"/>
+  <barColor r="255" g="0" b="0" a="255"/>
+</HealthBar>
+
+<clickOn>
+  <file>res/assets/clickon.png</file>
+  <startLoc x="340" y="170"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <transparency>true</transparency>
+</clickOn>
+
+<clickOff>
+  <file>res/assets/clickoff.png</file>
+  <startLoc x="340" y="170"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <transparency>true</transparency>
+</clickOff>
+
+<font name="font">
+  <file>res/fonts/arial.ttf</file>
+  <size>18</size>
+  <color r="255" g="255" b="0" a="0"/>
+</font>
+
+<!-- Setting for Background -->
+<city>
+  <file>res/assets/bg_city.png</file>
+  <factor>1</factor>
+  <transparency>false</transparency>
+</city>
+
+
+<bg_tombwoof>
+  <file>res/assets/bg_tombwoof.png</file>
+  <factor>1</factor>
+  <transparency>false</transparency>
+</bg_tombwoof>
+
+<lamp>
+  <file>res/assets/bg_lamp.png</file>
+  <factor>1</factor>
+  <transparency>false</transparency>
+</lamp>
+
+<PinkBird>
+  <file>res/assets/pinkBird.png</file>
+  <number>10</number>
+  <startLoc x="50" y="140"/>
+  <frames>4</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>100</speedX>
+  <speedY>200</speedY>
+  <limitloc top="0" botton ="595"/>
+  <safeDistance>30</safeDistance>
+  <transparency>false</transparency>
+  <chunk>
+    <size>16</size>
+    <distance>100</distance>
+  </chunk>
+</PinkBird>
+
+<RedBird>
+  <file>res/assets/redSpriteBird.png</file>
+  <number>10</number>
+  <startLoc x="50" y="140"/>
+  <frames>14</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>100</speedX>
+  <speedY>200</speedY>
+  <limitloc top="0" botton ="595"/>
+  <safeDistance>30</safeDistance>
+  <transparency>false</transparency>
+  <chunk>
+    <size>16</size>
+    <distance>100</distance>
+  </chunk>
+</RedBird>
+
+
+<monster_walk>
+  <file>res/assets/monster_walk.png</file>
+  <number>8</number>
+  <startLoc x="480" y="400"/>
+  <frames>7</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>100</speedX>
+  <speedY>200</speedY>
+  <limitloc top="420" botton ="580"/>
+  <safeDistance>120</safeDistance>
+  <transparency>false</transparency>
+  <chunk>
+    <size>16</size>
+    <distance>100</distance>
+  </chunk>
+</monster_walk>
+
+<Viking>
+  <file>
+    <idle file="res/assets/viking_idle.png" frames="60"/>
+    <run file="res/assets/viking_run.png" frames="12"/>
+    <walk file="res/assets/viking_walk.png" frames="19"/>
+    <jump file="res/assets/viking_jump.png" frames="25"/>
+    <jumpattack file="res/assets/viking_jumpswing.png" frames="9"/>
+    <attack1 file="res/assets/viking_swinga.png" frames="16"/>
+    <attack2 file="res/assets/viking_swingb.png" frames="18"/>
+    <attack3 file="res/assets/viking_swingc.png" frames="18"/>
+  </file>
+  <bullet1>bullet1</bullet1> 
+  <bullet2>bullet2</bullet2> 
+  <number>1</number>
+  <startLoc x="30" y="470"/>
+  <limitloc top="355" botton ="595"/>
+  <speed x="400" y="300" />
+  <limitbotton>595</limitbotton>
+  <scale>0.5</scale>
+  <frameInterval>100</frameInterval>
+  <chunk>
+    <size>16</size>
+    <distance>50</distance>
+  </chunk>
+  <transparency>false</transparency>
+</Viking>
+
+
+<bullet1>
+  <file>res/assets/bullet_darts.png</file>
+  <startLoc x="50" y="140"/>
+  <interval>300</interval>
+  <distance>500</distance>
+  <strategy>rectangular</strategy>
+  <frames>1</frames>
+  <imageWidth>18</imageWidth>
+  <imageHeight>18</imageHeight>
+  <frameInterval>100</frameInterval>
+  <speedX>500</speedX>
+  <speedY>500</speedY>
+  <transparency>false</transparency>
+</bullet1>
+
+
+<bullet2>
+  <file>res/assets/bullet_fire.png</file>
+  <startLoc x="50" y="140"/>
+  <interval>300</interval>
+  <distance>500</distance>
+  <strategy>rectangular</strategy>
+  <frames>1</frames>
+  <imageWidth>60</imageWidth>
+  <imageHeight>55</imageHeight>
+  <frameInterval>100</frameInterval>
+  <speedX>250</speedX>
+  <speedY>250</speedY>
+  <transparency>false</transparency>
+</bullet2>
+
+<HealthBar>
+  <startLoc x="695" y="90"/>
+  <increment>10</increment>
+  <interval>1000</interval>
+  <width>200</width>
+  <height>15</height>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <backColor r="255" g="255" b="255" a="127"/>
+  <barColor r="255" g="0" b="0" a="255"/>
+</HealthBar>
+
+<bossHealthBar>
+  <startLoc x="400" y="580"/>
+  <width>230</width>
+  <height>15</height>
+  <position x="90" y="25"/>
+  <increment>10</increment>
+  <interval>1000</interval>
+  <width>500</width>
+  <height>15</height>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <backColor r="255" g="255" b="255" a="127"/>
+  <barColor r="255" g="0" b="0" a="255"/>
+</bossHealthBar>
+
+<boss>
+  <file>res/assets/boss.png</file>
+  <number>20</number>
+  <startLoc x="50" y="140"/>
+  <frames>8</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>100</speedX>
+  <speedY>200</speedY>
+  <limitloc top="0" botton ="595"/>
+  <safeDistance>50</safeDistance>
+  <transparency>false</transparency>
+  <chunk>
+    <size>30</size>
+    <distance>100</distance>
+  </chunk>
+</boss>
+
+</GameData>
