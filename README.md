@@ -14,6 +14,8 @@ Build a 2-D game engine construction. Use this engine to implement 2D game which
 * Object Pool: Use seven design patterns in this project to build this 2-D game.
 * Build HUD with F1 and the HUD should display (1) the fps, and (2) info about how to move the player object.
 
+[Youtubu Video](https://youtu.be/X7uQuaB9wNA)
+
 # Games features
 
 There are two main features in this project. The first thing is the AI and Collision Detection. The other thing is the Pool and Projectiles.
